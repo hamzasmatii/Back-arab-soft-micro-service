@@ -1,0 +1,14 @@
+
+|
+java:S3655k"fCall "optionalJobPosition.isPresent()" or "!optionalJobPosition.isEmpty()" before accessing the value.(ß÷™ä
+V	java:S125"<This block of commented-out lines of code should be removed.(«ù¾Öúÿÿÿÿ
+V	java:S125|"<This block of commented-out lines of code should be removed.(‹¾Ê‘þÿÿÿÿ
+F	java:S106¶"+Replace this use of System.out by a logger.(ì¤ˆÎþÿÿÿÿ
+@	java:S106·"+Replace this use of System.out by a logger.(÷çä[
+F	java:S106½"+Replace this use of System.out by a logger.(Ã¼Øøÿÿÿÿÿ
+A	java:S106Ã"+Replace this use of System.out by a logger.(¼ñ°
+F	java:S106È"+Replace this use of System.out by a logger.(þ—«Øüÿÿÿÿ
+c
+java:S1128"HRemove this unused import 'org.springframework.web.client.RestTemplate'.(Îö¼Þûÿÿÿÿ
+G
+java:S1128",Remove this unused import 'java.io.Console'.(ŽæÅªýÿÿÿÿ

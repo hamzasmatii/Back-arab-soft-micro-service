@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Competance/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Competance/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Evaluation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Evaluation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Formation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Formation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JobPosition/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JobPosition/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServiceEq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServiceEq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/User/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/User/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery-server/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

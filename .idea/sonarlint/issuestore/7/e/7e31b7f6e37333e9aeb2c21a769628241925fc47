@@ -1,0 +1,7 @@
+
+f	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Ì‹Ã
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÀ¹„
+P	java:S125"<This block of commented-out lines of code should be removed.(Ðóùd
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ

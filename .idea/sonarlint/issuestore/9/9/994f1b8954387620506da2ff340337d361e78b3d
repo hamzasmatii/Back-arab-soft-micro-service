@@ -1,0 +1,7 @@
+
+
+java:S3655d"dCall "optionalEvaluation.isPresent()" or "!optionalEvaluation.isEmpty()" before accessing the value.(øÍôÂþÿÿÿÿ
+A	java:S106 "+Replace this use of System.out by a logger.(™«…–
+W	java:S125®"<This block of commented-out lines of code should be removed.(ÝÓåÔúÿÿÿÿ
+W	java:S125½"<This block of commented-out lines of code should be removed.(¥ï’–ûÿÿÿÿ
+R	java:S125Â"<This block of commented-out lines of code should be removed.(Ñ¯üÔ

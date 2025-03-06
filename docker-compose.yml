@@ -1,0 +1,82 @@
+version: '3.9'
+services:
+  
+  # Service Eureka pour la découverte des services
+  eureka-server:
+    build: .\discovery-server
+    image: eurekaserver:1.0 # Nom de l'image pour votre serveur Eureka
+    container_name: eureka-server
+    ports:
+      - "8761:8761" # Port par défaut d'Eureka
+    environment:
+      - EUREKA_CLIENT_REGISTER_WITH_EUREKA=false
+      - EUREKA_CLIENT_FETCH_REGISTRY=false
+   
+
+  # Service FORMATION
+  JOBPOSITION-service:
+    build: .\JOBPOSITION
+    image: jobposition:1.0 # Nom de l'image pour votre service Produit
+    container_name: JOBPOSITION-service
+    ports:
+      - "8087:8086" # Port utilisé par le service Produit
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+      
+    depends_on:
+      - eureka-server
+
+  # Service FORMATION
+  FORMATION-service:
+    build: .\FORMATION
+    image: formation:1.0 # Nom de l'image pour votre service Produit
+    container_name: FORMATION-service
+    ports:
+      - "8085:8084" # Port utilisé par le service Produit
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+    depends_on:
+      - eureka-server
+
+  # Service EVALUATION
+  EVALUATION-service:
+    build: .\EVALUATION
+    image: evaluation:1.0 # Nom de l'image pour votre service Produit
+    container_name: EVALUATION-service
+    ports:
+      - "8089:8088" # Port utilisé par le service Produit
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+    depends_on:
+      - eureka-server
+
+  SERVICEEQ-service:
+    build: .\SERVICEEQ
+    image: serviceeq:1.0 # Nom de l'image pour votre service Produit
+    container_name: SERVICEEQ-service
+    ports:
+      - "8086:8085" # Port utilisé par le service Produit
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+    depends_on:
+      - eureka-server
+
+   
+
+#  # API Gateway
+#  api-gateway:
+#    build: .\ApiGateway
+#    image: apigateway:1.0 # Nom de l'image pour votre API Gateway
+#    container_name: api-gateway
+#    ports:
+#      - "8088:8089" # Port utilisé par l'API Gateway
+#    environment:
+#      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+#
+#    depends_on:
+#      - eureka-server
+#      - produit-service
+   
